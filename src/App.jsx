@@ -60,7 +60,7 @@ function App() {
             }`}
             style={{
               maxHeight: "50vh",
-              scrollbarColor: "#374151 #111827", // thumb, track
+              scrollbarColor: "#374151 #111827", 
               scrollbarWidth: "thin",
               WebkitScrollbarColor: "#374151 #111827",
               WebkitScrollbarWidth: "thin",
@@ -71,7 +71,7 @@ function App() {
                 <TodoItem key={todo.id} todo={todo} index={index} />
               ))
             ) : (
-              <div className="text-center text-2xl font-bold text-gray-500 py-10 ">
+              <div className="text-center text-2xl font-bold text-gray-200 py-10 font-['Architects_Daughter']">
                 No tasks yet
               </div>
             )}

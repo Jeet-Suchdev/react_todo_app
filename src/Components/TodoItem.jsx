@@ -28,7 +28,7 @@ function TodoItem({ todo, index }) {
 
   return (
     <div
-      className={`flex flex-col lg:flex-row items-start lg:items-center bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 border border-gray-700 rounded-2xl px-3 lg:px-5 py-2 lg:py-3 shadow-lg text-white font-['Architects_Daughter'] text-base lg:text-lg lg:md:text-xl transition-all duration-300 hover:border-indigo-400 hover:shadow-[0_0_12px_2px_rgba(99,102,241,0.5)] ${
+      className={`flex flex-col lg:flex-row items-start lg:items-center lg:gap-x-6 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 border border-gray-700 rounded-2xl px-3 lg:px-5 py-2 lg:py-3 shadow-lg text-white font-['Architects_Daughter'] text-base lg:text-lg lg:md:text-xl transition-all duration-300 hover:border-indigo-400 hover:shadow-[0_0_12px_2px_rgba(99,102,241,0.5)] ${
         todo.completed ? "opacity-60" : ""
       }`}
     >
