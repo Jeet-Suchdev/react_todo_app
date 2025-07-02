@@ -68,7 +68,7 @@ function TodoItem({ todo, index }) {
           <div className="flex-1 min-w-0 flex items-center h-full align-baseline">
             <textarea
               ref={textareaRef}
-              className={`custom-scrollbar w-full overflow-x-auto whitespace-nowrap min-h-[2.5rem] max-h-40 bg-transparent outline-none px-2 py-1 ${hasHorizontalScroll ? 'pb-2 lg:pb-3' : ''} text-white text-xl lg:text-2xl lg:md:text-3xl font-semibold font-['Architects_Daughter'] transition-all ${todo.completed ? "line-through text-gray-400" : ""} ${isTodoEditable ? "bg-white/20 ring-2 ring-[#8b5cf6]" : ""}`}
+              className={`custom-scrollbar w-full overflow-x-auto whitespace-nowrap min-h-[2.5rem] max-h-40 bg-transparent outline-none px-2 py-1 ${hasHorizontalScroll ? 'pb-0 lg:pb-3' : ''} text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-semibold font-['Architects_Daughter'] transition-all ${todo.completed ? "line-through text-gray-400" : ""} ${isTodoEditable ? "bg-white/20 ring-2 ring-[#8b5cf6]" : ""}`}
               value={todoMsg}
               onChange={(e) => setTodoMsg(e.target.value)}
               readOnly={!isTodoEditable}
@@ -78,7 +78,7 @@ function TodoItem({ todo, index }) {
           </div>
         </div>
         {/* Bottom row: Date and action buttons */}
-        <div className="flex flex-row items-center justify-between gap-2">
+        <div className="flex flex-row items-center justify-between gap-0 lg:gap-2">
           <span className="px-2 py-1 rounded-full bg-violet-700 text-white text-xs md:text-sm font-bold tracking-wide whitespace-nowrap shadow ring-2 ring-violet-400/40 font-['Nunito',_sans-serif]">
             {todo.date}
           </span>
